@@ -1,0 +1,6 @@
+html {
+    /* change 80px to whatever your nav’s total height is */
+    scroll-padding-top: 65px;
+    scroll-behavior: smooth; /* optional, for smooth scroll */
+  }
+  

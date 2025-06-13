@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="en" class="h-full">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Blog - Dental Rank SEO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <style>
+    html {
+      scroll-padding-top: 4rem;
+      scroll-behavior: smooth;
+    }
+    td a { display: block; width: 100%; height: 100%; text-decoration: none; color: inherit; }
+    @media (max-width: 768px) {
+      td, th { padding: 0.5rem !important; }
+    }
+  </style>
+</head>
+<body class="h-full flex flex-col font-sans antialiased text-black bg-white">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 w-full bg-gradient-to-r from-[#4CB8C4] to-[#1C3F58] text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Dental Rank SEO</a>
+      <ul class="hidden md:flex space-x-8 uppercase tracking-wide text-sm">
+        <li><a href="home.html#home" class="px-2 py-2 hover:text-[#A7D5C0]">Home</a></li>
+        <li><a href="home.html#services" class="px-2 py-2 hover:text-[#A7D5C0]">Services</a></li>
+        <li><a href="home.html#about" class="px-2 py-2 hover:text-[#A7D5C0]">About</a></li>
+        <li><a href="blog.html" class="px-2 py-2 hover:text-[#A7D5C0]">Blog</a></li>
+        <li>
+          <a href="home.html#audit" class="px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90">
+            Request Audit
+          </a>
+        </li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16" />
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-[#4CB8C4] to-[#1C3F58] text-white">
+      <ul class="flex flex-col space-y-2 py-4 px-4 uppercase tracking-wide text-sm">
+        <li><a href="home.html#home" class="block px-2 py-2 hover:text-[#A7D5C0]">Home</a></li>
+        <li><a href="home.html#services" class="block px-2 py-2 hover:text-[#A7D5C0]">Services</a></li>
+        <li><a href="home.html#about" class="block px-2 py-2 hover:text-[#A7D5C0]">About</a></li>
+        <li><a href="blog.html" class="block px-2 py-2 hover:text-[#A7D5C0]">Blog</a></li>
+        <li><a href="home.html#audit" class="block px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90 text-center">Request Audit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Main content grows to push footer down -->
+  <div class="pt-5 flex-grow">
+
+    <!-- Blog Catalog -->
+    <section class="py-20">
+      <div class="container mx-auto px-4 max-w-4xl">
+        <h1 class="text-4xl font-bold text-center mb-8">Blog Catalog</h1>
+        <table class="w-full bg-white border border-gray-200 text-sm">
+          <thead class="bg-gray-50">
+            <tr>
+              <th class="px-6 py-3 text-left font-semibold uppercase">Date</th>
+              <th class="px-6 py-3 text-left font-semibold uppercase">Title</th>
+              <th class="px-6 py-3 text-left font-semibold uppercase">Summary</th>
+            </tr>
+          </thead>
+          <tbody class="divide-y divide-gray-200">
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4"><a href="blogpost1.html">June 1, 2025</a></td>
+              <td class="px-6 py-4 font-medium text-[#1C3F58]"><a href="blogpost1.html">5 Tips to Improve Your Dental Website</a></td>
+              <td class="px-6 py-4 text-[#555555]"><a href="blogpost1.html">Learn how to optimize your site for user experience and SEO to attract more patients.</a></td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4"><a href="blogpost2.html">May 25, 2025</a></td>
+              <td class="px-6 py-4 font-medium text-[#1C3F58]"><a href="blogpost2.html">Local SEO Strategies for Dentists</a></td>
+              <td class="px-6 py-4 text-[#555555]"><a href="blogpost2.html">Discover proven tactics to dominate local search results in your area.</a></td>
+            </tr>
+            <tr class="hover:bg-gray-50">
+              <td class="px-6 py-4"><a href="blogpost3.html">May 10, 2025</a></td>
+              <td class="px-6 py-4 font-medium text-[#1C3F58]"><a href="blogpost3.html">How to Track Patient Calls Effectively</a></td>
+              <td class="px-6 py-4 text-[#555555]"><a href="blogpost3.html">Best practices for setting up call tracking and analyzing data for growth.</a></td>
+            </tr>
+            <!-- Add more rows as needed -->
+          </tbody>
+        </table>
+      </div>
+    </section>
+
+  </div>
+
+  <!-- Footer -->
+  <footer class="bg-gradient-to-r from-[#1C3F58] to-[#4CB8C4] text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Dental Rank SEO. All rights reserved.</p>
+    </div>
+  </footer>
+
+  <!-- Mobile menu script -->
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+
+</body>
+</html>

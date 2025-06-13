@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Dental Rank SEO</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+  <link rel="stylesheet" href="styles.css" />
+  <style>
+    html {
+      scroll-padding-top: 4rem;
+      scroll-behavior: smooth;
+    }
+  </style>
+</head>
+<body class="font-sans antialiased text-black bg-white">
+
+  <!-- Navigation -->
+  <nav class="sticky top-0 z-50 w-full bg-gradient-to-r from-[#4CB8C4] to-[#1C3F58] text-white shadow-lg">
+    <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+      <a href="index.html" class="text-2xl font-bold">Dental Rank SEO</a>
+      <ul class="hidden md:flex space-x-8 uppercase tracking-wide text-sm">
+        <li><a href="#home" class="px-2 py-2 hover:text-[#A7D5C0]">Home</a></li>
+        <li><a href="#services" class="px-2 py-2 hover:text-[#A7D5C0]">Services</a></li>
+        <li><a href="#about" class="px-2 py-2 hover:text-[#A7D5C0]">About</a></li>
+        <li><a href="blog.html" class="px-2 py-2 hover:text-[#A7D5C0]">Blog</a></li>
+        <li><a href="#audit" class="px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90">Request Audit</a></li>
+      </ul>
+      <button id="menu-toggle" class="md:hidden focus:outline-none">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+          <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"/>
+        </svg>
+      </button>
+    </div>
+    <div id="mobile-menu" class="hidden md:hidden bg-gradient-to-r from-[#4CB8C4] to-[#1C3F58] text-white">
+      <ul class="flex flex-col space-y-2 py-4 px-4 uppercase tracking-wide text-sm">
+        <li><a href="#home" class="block px-2 py-2 hover:text-[#A7D5C0]">Home</a></li>
+        <li><a href="#services" class="block px-2 py-2 hover:text-[#A7D5C0]">Services</a></li>
+        <li><a href="#about" class="block px-2 py-2 hover:text-[#A7D5C0]">About</a></li>
+        <li><a href="blog.html" class="block px-2 py-2 hover:text-[#A7D5C0]">Blog</a></li>
+        <li><a href="#audit" class="block px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90 text-center">Request Audit</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <div class="pt-20">
+
+    <!-- Hero Section -->
+    <section id="home" class="relative h-[92vh] bg-cover bg-center -mt-20" style="background-image:url('https://source.unsplash.com/featured/1600x900?dentist');">
+      <div class="absolute inset-0 bg-black bg-opacity-50"></div>
+      <div class="container mx-auto px-4 h-full flex flex-col justify-center items-center text-center text-white">
+        <h1 class="text-lg md:text-sm mb-2 drop-shadow-md">Dental SEO Services</h1>
+        <h1 class="text-5xl md:text-6xl font-extrabold mb-4 drop-shadow-lg">Grow Your Dental Practice Online</h1>
+        <p class="text-lg md:text-xl mb-4 drop-shadow-md">We help dentists rank higher, get more patients, and grow their dental practice.</p>
+        <a href="#services" class="inline-block bg-[#A7D5C0] text-black font-semibold py-3 px-6 rounded-lg hover:opacity-90 drop-shadow">Our Services</a>
+      </div>
+    </section>
+
+    <!-- Audit Request Form -->
+    <section id="audit" class="py-20 bg-[#A7D5C0]">
+        <div class="container mx-auto px-4 max-w-6xl">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-8">
+            <div class="text-center md:text-left">
+              <h2 class="text-4xl md:text-5xl font-extrabold text-[#1C3F58]">Request a Free SEO Audit Video</h2>
+              <br>
+              <p class="text-xl text-[#333333]">We will send you a 5-minute video auditing your SEO and explaining how we can help, free of charge.</p>
+            </div>
+            
+            <form action="https://api.web3forms.com/submit" method="POST" class="space-y-4">
+              <input type="hidden" name="access_key" value="b8c45506-fdc4-427a-8bc6-7a51da848eca" />
+              <input type="hidden" name="redirect" value="" />
+              <input type="hidden" name="subject" value="New SEO Audit Request" />
+              
+              <input type="text" name="name" placeholder="Name" class="w-full border border-gray-300 rounded px-3 py-2" required />
+              <input type="email" name="email" placeholder="Email" class="w-full border border-gray-300 rounded px-3 py-2" required />
+              <input type="text" name="website" placeholder="Website" class="w-full border border-gray-300 rounded px-3 py-2" required />
+              
+              <button type="submit" class="w-full bg-[#4CB8C4] text-white font-semibold py-2 rounded hover:opacity-90">Request Audit</button>
+            </form>
+          </div>
+        </div>
+    </section>      
+
+    <!-- Services Section -->
+    <section id="services" class="py-20 bg-gray-50">
+        <div class="container mx-auto px-4">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Services</h2>
+          <div class="grid gap-8 md:grid-cols-2">
+            <div class="bg-white border rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">SEO Growth Plan</h3>
+                <p class="text-2xl font-bold mb-6">$500<span class="text-base font-normal">/month</span></p>
+                <ul class="space-y-4 text-[#333333] mb-6">
+                  <li><b>Good for practices just starting with SEO.</b></li>
+                  <li>Target search terms that result in patients within a 3-4 month timeframe.</li>
+                  <li>Fine-tune your website and directory listings (Google Business, Yelp, etc.) to ensure your practice shows up first for nearby patients.</li>
+                  <li>Monthly reports to see progress and make adjustments.</li>
+                  <li>No extra fees or contracts.</li>
+                </ul>
+              </div>
+              <a href="#audit" class="block px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90 text-center">Request Audit</a>
+            </div>
+            <div class="bg-white border rounded-2xl shadow-lg p-8 hover:shadow-2xl transition transform hover:-translate-y-1 flex flex-col justify-between">
+              <div>
+                <h3 class="text-2xl font-semibold mb-4">SEO Advanced Plan</h3>
+                <p class="text-2xl font-bold mb-6">Contact us for Pricing</p>
+                <ul class="space-y-4 text-[#333333] mb-6">
+                  <li><b>Good for practices who've had success with our Growth Plan.</b></li>
+                  <li>Target broader and competitive search terms, resulting in more patients and brand awareness.</li>
+                  <li>Continue to fine-tune your website and directory listings (Google Business, Yelp, etc.) to ensure your practice shows up first for more patients.</li>
+                  <li>Monthly reports to see progress and make adjustments.</li>
+                </ul>
+              </div>
+              <a href="#audit" class="block px-6 py-2 bg-[#A7D5C0] text-black font-bold rounded-lg hover:opacity-90 text-center">Request Audit</a>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Our Process Section -->
+    <section id="about" class="py-20 bg-white">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          <div class="text-center md:text-left">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-[#1C3F58] mb-4">Our Process</h2>
+            <p class="text-xl text-[#333333]">What we do to get you seen by the right patients.</p>
+          </div>
+          <p><strong>1. Analyze Local Dental Keywords</strong><br>Real patients search for dental services in very specific ways. We research search volume and patient intent to locate search terms that bring in patients and generate returns.</p>
+          <p><strong>2. Competitive Dental Landscape Analysis</strong><br>Discover what top-ranking dental practices in your area are doing. We find gaps and opportunities so your practice can outrank the competition and appear in front of patients before them.</p>
+          <p><strong>3. Patient-Focused Site Analytics</strong><br>Tracking how patients interact with your website is a key step in improving it. We set up tracking tools to see how patients interact with your site and get actionable insights.</p>
+          <p><strong>4. Dental Content Strategy and Creation</strong><br>Using our research, we create engaging, search-optimized content that speaks directly to your patients and gets your site in front of them.</p>
+          <p><strong>5. Local Dental Backlink Building</strong><br>We boost credibility through high-quality links from local directories and trusted area sources, proving to Google (and your patients) that you’re the go-to dentist in your area.</p>
+          <p><strong>6. Ongoing Growth and Patient-Focused Reporting</strong><br>Continuous monitoring keeps you in the loop, so we share monthly reports to show you our progress. View how your investment is not only leading to better rankings in Google, but also real patients in your dental practice.</p>
+        </div>
+      </div>
+    </section>
+
+    <!-- About Section -->
+    <section class="py-20 bg-[#3CA1AD]">
+      <div class="container mx-auto px-4">
+        <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+          <div class="text-center md:text-left">
+            <h2 class="text-5xl md:text-6xl font-extrabold text-white mb-4">Who We Are</h2>
+            <p class="text-xl text-gray-200">We’re on a mission to help dentists dominate local search and fill their chairs!</p>
+          </div>
+          <div class="space-y-6 text-lg leading-relaxed text-white font-bold">
+            <p>At Dental Rank SEO, we specialize in search engine optimization for dentists. Our team understands the unique challenges dentists face and what they want to accomplish through SEO. We provide tailored SEO services to make a difference by improving online visibility, attracting real patients, and delivering measurable ROI.</p>
+            <p>From precise keyword research and content creation to technical SEO audits and authoritative backlink building, we cover every angle of dental SEO so you can focus on delivering top-tier service while we drive your growth.</p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="testimonials" class="py-20 bg-gray-100">
+        <div class="container mx-auto px-1 max-w-4xl">
+          <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">Testimonials</h2>
+          <div class="grid gap-6 md:grid-cols-3">
+            <div class="bg-white border rounded-2xl shadow-lg p-9">
+              <p class="text-[#555555] mb-4">“Dental Rank SEO boosted our visibility and we’re seeing more patients than ever!”</p>
+              <p class="font-bold text-[#1C3F58]">— Dr. Emily P., Family Dentist</p>
+            </div>
+            <div class="bg-white border rounded-2xl shadow-lg p-6">
+              <p class="text-[#555555] mb-4">“Professional team that really understands how dental SEO works. Highly recommended!”</p>
+              <p class="font-bold text-[#1C3F58]">— Dr. John K., Cosmetic Dentist</p>
+            </div>
+            <div class="bg-white border rounded-2xl shadow-lg p-6">
+                <p class="text-[#555555] mb-4">“Professional team that really understands how dental SEO works. Highly recommended!”</p>
+                <p class="font-bold text-[#1C3F58]">— Dr. John K., Cosmetic Dentist</p>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <!-- Dental SEO Section -->
+    <section class="py-20 bg-white">
+        <div class="container mx-auto px-4">
+          <div class="grid grid-cols-1 md:grid-cols-2 items-center gap-12">
+            <div class="text-center md:text-left">
+              <h2 class="text-5xl md:text-6xl font-extrabold text-[#8CBCA7] mb-4">About Dental SEO</h2>
+              <p class="text-xl text-[#333333]">Why we offer dental seo services.</p>
+            </div>
+            <p>Real patients search for dental services in very specific ways. We research search volume and patient intent to locate search terms that bring in patients and generate returns.</p>
+
+        </div>
+      </section>
+
+    <!-- Blog Preview Section -->
+    <section id="blog" class="py-20 bg-white">
+      <div class="container mx-auto px-4 max-w-6xl">
+        <h2 class="text-3xl md:text-4xl font-bold text-center mb-12">From Our Blog</h2>
+        <div class="grid gap-8 grid-cols-1 sm:grid-cols-2 md:grid-cols-3">
+          <a href="blogpost1.html" class="block bg-white border rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <img src="https://source.unsplash.com/random/400x250?dental-website" alt="5 Tips" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">5 Tips to Improve Your Dental Website</h3>
+              <p class="text-sm text-[#555555]">Learn how to optimize your site for user experience and SEO to attract more patients.</p>
+            </div>
+          </a>
+          <a href="blogpost2.html" class="block bg-white border rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <img src="https://source.unsplash.com/random/400x250?dentist" alt="Local SEO" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">Local SEO Strategies for Dentists</h3>
+              <p class="text-sm text-[#555555]">Discover proven tactics to dominate local search results in your area.</p>
+            </div>
+          </a>
+          <a href="blogpost3.html" class="block bg-white border rounded-2xl overflow-hidden shadow-lg hover:shadow-xl transition transform hover:-translate-y-1">
+            <img src="https://source.unsplash.com/random/400x250?patients" alt="Call Tracking" class="w-full h-48 object-cover">
+            <div class="p-6">
+              <h3 class="font-semibold text-xl mb-2">How to Track Patient Calls Effectively</h3>
+              <p class="text-sm text-[#555555]">Best practices for setting up call tracking and analyzing data for growth.</p>
+            </div>
+          </a>
+        </div>
+        <div class="text-center mt-8">
+          <a href="blog.html" class="inline-block bg-[#A7D5C0] text-black font-semibold py-3 px-6 rounded-lg hover:opacity-90">Read More</a>
+        </div>
+      </div>
+    </section>
+
+  </div>
+
+  <footer class="bg-gradient-to-r from-[#1C3F58] to-[#4CB8C4] text-white py-8">
+    <div class="container mx-auto px-4 text-center">
+      <p>&copy; 2025 Dental Rank SEO. All rights reserved.</p>
+      <br>
+      <a>contact@dentalrankpro.com</a>
+      <br>
+      <a>(443) 535-2587</a>
+    </div>
+  </footer>
+
+  <script>
+    const menuToggle = document.getElementById('menu-toggle');
+    const mobileMenu = document.getElementById('mobile-menu');
+    menuToggle.addEventListener('click', () => mobileMenu.classList.toggle('hidden'));
+  </script>
+
+</body>
+</html>
